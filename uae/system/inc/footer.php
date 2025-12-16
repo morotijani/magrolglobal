@@ -10,15 +10,12 @@
                 <div class="col-lg-6 mx-auto text-center">
                     <!-- Logo -->
                     <img class="mx-auto h-60px" src="assets/images/logo-light.svg" alt="logo">
-                    <p class="mt-3 text-white">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
+                    <p class="mt-3 text-white">Magrol Global UAE - Your Gateway to Premium Services in Dubai.</p>
                     <!-- Links -->
                     <ul class="nav justify-content-between text-primary-hover mt-3 mt-md-0">
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="#">Terms</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="#">Privacy</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="#">Career</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="#">Contact us</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="#">Cookies</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="about">About</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="contact">Contact</a></li>
                     </ul>
                     <!-- Social media button -->
                     <ul class="list-inline mt-3 mb-0">
@@ -44,7 +41,7 @@
                         </li>
                     </ul>
                     <!-- copyright text -->
-                    <div class="text-body-secondary text-primary-hover mt-3"> Copyrights ©2024 Booking. Build by <a href="https://www.webestica.com/" class="text-body-secondary">Webestica</a>. </div>
+                    <div class="text-body-secondary text-primary-hover mt-3"> Copyrights ©2024 Magrol Global. </div>
                 </div>
             </div>
             

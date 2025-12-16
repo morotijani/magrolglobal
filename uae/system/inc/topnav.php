@@ -21,31 +21,17 @@
                 <!-- Main navbar START -->
                 <div class="navbar-collapse collapse" id="navbarCollapse">
                     <ul class="navbar-nav navbar-nav-scroll mx-auto">
-
-                        <!-- Nav item Link -->
-                        
-
-                        <!-- Nav item Link -->
-                        <li class="nav-item"> <a class="nav-link" href="#">Our Story</a> </li>
-
-                        <!-- Nav item Link -->
-                        <li class="nav-item"> <a class="nav-link" href="#">Experience</a> </li>
-
-                        <!-- Nav item Link -->
-                        <li class="nav-item"> <a class="nav-link" href="#">Rooms & Suites</a> </li>
-
-                        <!-- Nav item Link -->
-                        <li class="nav-item"> <a class="nav-link" href="#">Offers</a> </li>
-
-                        <!-- Nav item Link -->
-                        <li class="nav-item"> <a class="nav-link" href="#">Gallery</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="index">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="services">Services</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="contact">Contact</a> </li>
                     </ul>
                 </div>
                 <!-- Main navbar END -->
 
                 <!-- Book button -->
                 <div class="nav flex-row ms-xl-auto">
-                    <a class="btn btn-sm btn-primary mb-0" href="ghana"><i class="bi bi-calendar-week me-2"></i>Import to Ghana</a>
+                    <a class="btn btn-sm btn-primary mb-0" href="<?= PROOT; ?>../ghana/"><i class="bi bi-arrow-right-circle me-2"></i>Go to Ghana Branch</a>
                 </div>
 
             </div>

@@ -1,45 +1,44 @@
-    <header>
-        <nav class="navbar navbar-expand-lg <?= $navClass; ?>">
-            <div class="container px-3">
-                <a class="navbar-brand" href="<?= PROOT; ?>index"><img src="<?= PROOT; ?>assets/media/logo/logo.png" width="60" alt /></a>
-                <button class="navbar-toggler offcanvas-nav-btn" type="button">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
-                    <div class="offcanvas-header">
-                        <a href="<?= PROOT; ?>index" class="text-inverse"><img src="<?= PROOT; ?>assets/media/logo/logo.png"
-                            alt /></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body pt-0 align-items-center">
-                        <ul class="navbar-nav mx-auto align-items-lg-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= PROOT; ?>">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= PROOT; ?>about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= PROOT; ?>projects">Project</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= PROOT; ?>services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= PROOT; ?>news">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?= PROOT; ?>gallery">Gallery</a>
-                            </li>
-                        </ul>
-                        <div class="mt-3 mt-lg-0 d-flex align-items-center">
-                            <!-- <a href="<?= PROOT; ?>news" class="btn btn-light mx-2">News</a> -->
-                            <a href="<?= PROOT; ?>contact" class="btn btn-warning">Request a quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>   
-    </header>
+    <!-- Header START -->
+    <header class="header-transparent">
+        <!-- Logo Nav START -->
+        <nav class="navbar navbar-dark navbar-expand-xl">
+            <div class="container-fluid px-md-5">
+                <!-- Logo START -->
+                <a class="navbar-brand" href="index">
+                    <img class="navbar-brand-item" src="<?= PROOT . $appLogo; ?>" alt="logo">
+                </a>
+                <!-- Logo END -->
 
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler ms-auto me-3 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- Main navbar START -->
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                        <li class="nav-item"> <a class="nav-link" href="index">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="about">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="services">Import Services</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="contact">Contact</a> </li>
+                    </ul>
+                </div>
+                <!-- Main navbar END -->
+
+                <!-- Book button -->
+                <div class="nav flex-row ms-xl-auto">
+                    <a class="btn btn-sm btn-primary mb-0" href="<?= PROOT; ?>../uae/"><i class="bi bi-globe me-2"></i>Main Dubai Site</a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Logo Nav END -->
+    </header>
+    <!-- Header END -->
+
+    <!-- **************** MAIN CONTENT START **************** -->
     <main>
