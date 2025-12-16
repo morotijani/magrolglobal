@@ -1,7 +1,7 @@
 <?php
     require_once  __DIR__ . '/system/DatabaseConnector.php';
     $title = 'Home - Magrol Global UAE';
-    $navClass = "transparent navbar-transparent navbar-dark";
+    $navClass = '<header class="header-transparent"><nav class="navbar navbar-dark navbar-expand-xl">';
     include  __DIR__ . '/system/inc/head.php';
     include  __DIR__ . '/system/inc/topnav.php';
 ?>
@@ -65,18 +65,32 @@ Services END -->
 
 <!-- =======================
 About START -->
-<section class="pt-5 pt-md-8">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 m-auto text-center">
-                <h2>About Magrol Global</h2>
-                <p class="lead">Magrol Global is headquartered in Dubai, the hub of innovation and trade. All our goods (Cars, Building Materials) are stocked here, ensuring quality and readiness for our customers.</p>
-                <p>We also facilitate imports to our branch in Ghana upon request, bridging the gap between quality global goods and local needs.</p>
-            </div>
-        </div>
-    </div>
+<section class="pb-0 pb-xl-5">
+	<div class="container">
+		<div class="row g-4 justify-content-between align-items-center">
+			<!-- Left side START -->
+			<div class="col-lg-5 position-relative">
+				<!-- Image -->
+				<img src="<?= PROOT; ?>assets/media/bg-2.jpg" class="rounded-3 position-relative" alt="">
+			</div>
+			<!-- Left side END -->
+
+			<!-- Right side START -->
+			<div class="col-lg-6">
+				<h2 class="mb-3 mb-lg-5">About Magrol Global</h2>
+				<p class="mb-3 mb-lg-5">
+					Magrol Global is headquartered in Dubai, the hub of innovation and trade. All our goods (Cars, Building Materials) are stocked here, ensuring quality and readiness for our customers.
+					<br>
+					<br>
+					We also facilitate imports to our branch in Ghana upon request, bridging the gap between quality global goods and local needs.
+				</p>
+			</div>
+			<!-- Right side END -->
+		</div>
+	</div>
 </section>
 <!-- =======================
 About END -->
+
 
 <?php include  __DIR__ . '/system/inc/footer.php'; ?>

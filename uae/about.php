@@ -1,7 +1,7 @@
 <?php
     require_once  __DIR__ . '/system/DatabaseConnector.php';
     $title = 'About Us - Magrol Global UAE';
-    $navClass = "navbar-dark";
+    $navClass = '<header class="navbar-light header-sticky"><nav class="navbar navbar-expand-xl">';
     include  __DIR__ . '/system/inc/head.php';
     include  __DIR__ . '/system/inc/topnav.php';
 ?>

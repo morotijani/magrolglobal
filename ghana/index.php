@@ -15,7 +15,7 @@ Main banner START -->
                 <h1 class="display-4 text-white mb-3">Magrol Global Ghana</h1>
                 <h5 class="text-white mb-3">Import Quality Goods Directly from Dubai.</h5>
                 <p class="text-white-50 lead">Cars, Real Estate & Building Materials - Sourced from our Dubai Headquarters.</p>
-                <a href="#request-import" class="btn btn-lg btn-warning mb-0">Request an Import</a>
+                <a href="<?= PROOT; ?>request" class="btn btn-lg btn-warning mb-0">Request an Import</a>
             </div>
         </div> 
     </div>
@@ -161,7 +161,7 @@ Action box START -->
 				</div>
 				<!-- Content and input -->
 				<div class="col-lg-4 text-lg-end">
-					<a href="#request-import" class="btn btn-lg btn-dark mb-0">Request Import</a>
+					<a href="<?= PROOT; ?>request" class="btn btn-lg btn-dark mb-0">Request Import</a>
 				</div>
 			</div> <!-- Row END -->
 		</div>
