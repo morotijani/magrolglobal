@@ -1,116 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<head>
+	<title><?= $title . $appName; ?></title>
 
-    <meta name="description" content="Empowering Global Ventures in Exploration, Mining, and Gold Trading with M. Enterprise Ghana Limited." />
-    <link rel="canonical" href="https://menterpriseghanalimited.com" />
-    
-    <!-- Primary author / publisher -->
-    <meta name="author" content="Menterprise LTD" />
-    
-    <!-- Open Graph (Facebook, LinkedIn, other link previews) -->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Menterprise — Ghana Limited" />
-    <meta property="og:description" content="Empowering Global Ventures in Exploration, Mining, and Gold Trading with M. Enterprise Ghana Limited." />
-    <meta property="og:url" content="https://menterpriseghanalimited.com/" />
-    <meta property="og:site_name" content="Menterprise" />
-    
-     <!-- Replace with your high-quality preview image (>=1200x630) -->
-    <meta property="og:image" content="https://menterpriseghanalimited.com/assets/media/logo/logo.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Menterprise" />
-    <meta name="twitter:creator" content="@Menterprise" />
-    <meta name="twitter:title" content="Menterprise — Ghana Limited" />
-    <meta name="twitter:description" content="Empowering Global Ventures in Exploration, Mining, and Gold Trading with M. Enterprise Ghana Limited." />
-    <meta name="twitter:image" content="https://menterpriseghanalimited.com/assets/media/logo/logo.png" />
-    
-    <!-- Theme color for mobile browsers -->
-    <meta name="theme-color" content="#0b3d91" />
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Booking - Multipurpose Online Booking Theme">
 
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+		}
 
-    <!-- Schema.org JSON-LD (helps some consumers understand the file) -->
-    <!-- Schema.org JSON-LD: Organization + WebSite + SoftwareApplication (crypto exchange) -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://menterpriseghanalimited.com#org",
-                    "name": "Menterprise LTD",
-                    "url": "https://menterpriseghanalimited.com",
-                    "logo": "https://menterpriseghanalimited.com/assets/media/logo/logo.png",
-                    "sameAs": [
-                        "https://twitter.com/Menterprise",
-                        "https://www.linkedin.com/company/menterprise-ghana-limited",
-                        "https://www.facebook.com/MenterpriseGhanaLimited"
-                    ]
-                },
-                {
-                    "@type": "WebSite",
-                    "url": "https://menterpriseghanalimited.com",
-                    "name": "Menterprise LTD",
-                    "publisher": {
-                        "@id": "https://menterpriseghanalimited.com#org"
-                    }
-                },
-                {
-                    "@type": "SoftwareApplication",
-                    "name": "Menterprise LTD",
-                    "url": "https://menterpriseghanalimited.com/",
-                    "applicationCategory": "CryptocurrencyExchange",
-                    "operatingSystem": "WEB",
-                    "author": {
-                        "@id": "https://menterpriseghanalimited.com#org"
-                    },
-                    "description": "Empowering Global Ventures in Exploration, Mining, and Gold Trading with M. Enterprise Ghana Limited.",
-                    "image": "https://menterpriseghanalimited.com/assets/media/logo/logo.png"
-                 }
-            ]
-        }
-    </script>
-    
-    <!-- Optional: small inline JSON used by client (not required for social preview) -->
-    <script id="menterprise-client-config" type="application/json">
-        {"site":"Menterprise LTD","url":"https://menterpriseghanalimited.com","developer":"Menterprise LTD"}
-    </script>
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
 
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/glightbox.min.css" />
+		setTheme(getPreferredTheme())
 
-    <!-- Favicon icon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= PROOT; ?>assets/media/logo/logo.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= PROOT; ?>assets/media/logo/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= PROOT; ?>assets/media/logo/logo.png" />
-    <link rel="manifest" href="<?= PROOT; ?>assets/media/logo/site.webmanifest" />
-    <link rel="mask-icon" href="<?= PROOT; ?>assets/media/logo/block-safari-pinned-tab.svg" color="#8b3dff" />
-    <link rel="shortcut icon" href="<?= PROOT; ?>assets/media/logo/logo.png" />
-    <meta name="msapplication-TileColor" content="#8b3dff" />
-    <meta name="msapplication-config" content="<?= PROOT; ?>assets/media/logo/tile.xml" />
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
 
-    <!-- Color modes -->
-    <script src="<?= PROOT; ?>assets/js/color-modes.js"></script>
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
 
-    <!-- Libs CSS -->
-    <link href="<?= PROOT; ?>assets/css/simplebar.min.css" rel="stylesheet" />
-    <link href="<?= PROOT; ?>assets/css/bootstrap-icons.min.css" rel="stylesheet" />
-    <!-- Scroll Cue -->
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/scrollCue.css" />
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
 
-    <!-- Box icons -->
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/boxicons.min.css" />
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="<?= PROOT; ?>assets/css/theme.min.css">
+			showActiveTheme(getPreferredTheme())
 
-    <title><?= $title . $appName; ?></title>
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="<?= PROOT; ?>assets/media/logo/logo.png">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/choices.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/glightbox.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="<?= PROOT; ?>assets/css/style.css">
+
 </head>
+
 <body>
