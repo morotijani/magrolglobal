@@ -18,10 +18,11 @@
                 <!-- Main navbar START -->
                 <div class="navbar-collapse collapse" id="navbarCollapse">
                     <ul class="navbar-nav navbar-nav-scroll mx-auto">
-                        <li class="nav-item"> <a class="nav-link" href="index">Home</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="about">About</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="services">Import Services</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="contact">Contact</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="<?= PROOT; ?>index">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="<?= PROOT; ?>request">Request Import</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="<?= PROOT; ?>about">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="<?= PROOT; ?>services">Import Services</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="<?= PROOT; ?>contact">Contact</a> </li>
                     </ul>
                 </div>
                 <!-- Main navbar END -->

@@ -139,7 +139,7 @@ Steps END -->
 
 <!-- =======================
 Action box START -->
-<section class="py-0">
+<section class="py-0 mb-5">
 	<div class="container position-relative">
 		<div class="bg-light rounded-3 position-relative p-4 p-sm-5">
 

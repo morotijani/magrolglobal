@@ -13,11 +13,12 @@
                     <p class="mt-3 text-white">Magrol Global Ghana - Your Reliable Import Partner.</p>
                     <!-- Links -->
                     <ul class="nav justify-content-between text-primary-hover mt-3 mt-md-0">
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="about">About</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="services">Import Services</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>uae">Dubai</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>request">Request Import</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>about">About</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>services">Import Services</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link p-2 text-white" href="<?= PROOT; ?>../uae/">Dubai</a></li>
                     </ul>
                     <!-- Social media button -->
                     <ul class="list-inline mt-3 mb-0">
