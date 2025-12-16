@@ -1,19 +1,39 @@
 <?php
     require_once  __DIR__ . '/system/DatabaseConnector.php';
     $title = 'Import Services - Magrol Global Ghana';
-    $navClass = "navbar-dark";
+    $navClass = '<header class="navbar-light header-sticky"><nav class="navbar navbar-expand-xl">';
     include  __DIR__ . '/system/inc/head.php';
     include  __DIR__ . '/system/inc/topnav.php';
 ?>
 
+<!-- =======================
+Main banner START -->
+<section class="pt-4 pt-lg-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 mx-auto text-center">
+				<!-- Breadcrumb -->
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb breadcrumb-dots justify-content-center">
+						<li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house me-1"></i> Home</a></li>
+						<li class="breadcrumb-item active">Import Services</li>
+					</ol>
+				</nav>
+				<!-- Title -->
+				<h6 class="text-primary">Import Services</h6>
+				<h1>Import Services</h1>
+				<!-- Info -->
+				<p>Your direct link to Dubai's market.</p>
+				<!-- Search -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Main banner END -->
+
 <section class="pt-8">
     <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h1>Import Services</h1>
-                <p class="lead">Your direct link to Dubai's market.</p>
-            </div>
-        </div>
 
         <!-- Car Import -->
         <div class="row g-4 mb-5 align-items-center">

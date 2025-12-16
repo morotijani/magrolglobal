@@ -1,14 +1,14 @@
 <?php
     require_once  __DIR__ . '/system/DatabaseConnector.php';
     $title = 'Home - Magrol Global Ghana';
-    $navClass = "transparent navbar-transparent navbar-dark";
+    $navClass = '<header class="header-transparent"><nav class="navbar navbar-dark navbar-expand-xl">';
     include  __DIR__ . '/system/inc/head.php';
     include  __DIR__ . '/system/inc/topnav.php';
 ?>
 
 <!-- =======================
 Main banner START -->
-<section class="position-relative py-8 py-sm-9" style="background-color: #1a1a1a;">
+<section class="position-relative py-8 py-sm-9" style="background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.8) 100%), url(assets/media/bg-2.jpg); background-position: center left; background-size: cover;">
     <div class="container z-index-9 position-relative">
         <div class="row">
             <div class="col-xl-8 m-auto text-center py-xl-8">
@@ -170,50 +170,5 @@ Action box START -->
 <!-- =======================
 Action box END -->
 
-
-<!-- =======================
-Request Form START -->
-<section id="request-import" class="pt-5 pt-md-8">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 m-auto text-center">
-                <h2>Make an Import Request</h2>
-                <p class="lead">Tell us what you need, and we will handle the logistics from Dubai to Ghana.</p>
-                
-                <div class="card card-body shadow-lg p-5 mt-4 text-start">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Contact Number</label>
-                            <input type="text" class="form-control" placeholder="Phone Number">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Service Type</label>
-                            <select class="form-select">
-                                <option>Import Car</option>
-                                <option>Real Estate Inquiry</option>
-                                <option>Building Materials</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Description of Request</label>
-                            <textarea class="form-control" rows="4" placeholder="Describe the item or service you are looking for..."></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-dark btn-lg">Submit Request</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- =======================
-Request Form END -->
 
 <?php include  __DIR__ . '/system/inc/footer.php'; ?>

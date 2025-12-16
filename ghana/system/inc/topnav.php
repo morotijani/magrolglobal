@@ -1,7 +1,4 @@
-    <!-- Header START -->
-    <header class="header-transparent">
-        <!-- Logo Nav START -->
-        <nav class="navbar navbar-dark navbar-expand-xl">
+        <?= $navClass; ?>
             <div class="container-fluid px-md-5">
                 <!-- Logo START -->
                 <a class="navbar-brand" href="index">
