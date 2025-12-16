@@ -45,7 +45,8 @@ Why Choose Us START -->
 					<!-- Icon -->
 					<div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle mb-4"><i class="fa-solid fa-ship fs-5"></i></div>
 					<h5>Import Cars</h5>
-					<p class="mb-0">Looking for a specific vehicle? We import cars directly from our Dubai showroom to Ghana upon your request.</p>
+					<p class="mb-2">Looking for a specific vehicle? We import cars directly from our Dubai showroom to Ghana upon your request.</p>
+                    <a href="<?= PROOT; ?>cars" class="btn btn-sm btn-warning">Learn More</a>
 				</div>
 				<!-- Card END -->
 			</div>
@@ -57,7 +58,8 @@ Why Choose Us START -->
 					<!-- Icon -->
 					<div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-4"><i class="fa-solid fa-home fs-5"></i></div>
 					<h5>Real Estate Business</h5>
-					<p class="mb-0">Invest in Dubai real estate from Ghana. We guide you through the process and manage your international assets. </p>
+					<p class="mb-2">Invest in Dubai real estate from Ghana. We guide you through the process and manage your international assets. </p>
+                    <a href="<?= PROOT; ?>real-estate" class="btn btn-sm btn-warning">Learn More</a>
 				</div>
 				<!-- Card END -->
 			</div>
@@ -69,7 +71,8 @@ Why Choose Us START -->
 					<!-- Icon -->
 					<div class="icon-lg bg-warning bg-opacity-15 text-warning rounded-circle mb-4"><i class="fa-solid fa-truck fs-5"></i></div>
 					<h5>Import Building Materials</h5>
-					<p class="mb-0">Source high-grade building materials from Dubai for your construction projects in Ghana.</p>
+					<p class="mb-2">Source high-grade building materials from Dubai for your construction projects in Ghana.</p>
+                    <a href="<?= PROOT; ?>building-materials" class="btn btn-sm btn-warning">Learn More</a>
 				</div>
 				<!-- Card END -->
 			</div>
