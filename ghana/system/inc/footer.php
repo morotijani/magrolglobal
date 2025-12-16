@@ -9,7 +9,7 @@
             <div class="row mx-auto">
                 <div class="col-lg-6 mx-auto text-center">
                     <!-- Logo -->
-                    <img class="mx-auto h-60px" src="assets/images/logo-light.svg" alt="logo">
+                    <img class="mx-auto h-60px" src="<?= PROOT . $appLogo; ?>" alt="logo">
                     <p class="mt-3 text-white">Magrol Global Ghana - Your Reliable Import Partner.</p>
                     <!-- Links -->
                     <ul class="nav justify-content-between text-primary-hover mt-3 mt-md-0">
@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                     <!-- copyright text -->
-                    <div class="text-body-secondary text-primary-hover mt-3"> Copyrights ©2024 Magrol Global. </div>
+                    <div class="text-body-secondary text-primary-hover mt-3"> Copyrights &copy; <?= date('Y'); ?> Magrol Global. </div>
                 </div>
             </div>
             
