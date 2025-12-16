@@ -8,11 +8,11 @@
 
 <!-- =======================
 Main banner START -->
-<section class="position-relative py-8 py-sm-9" style="background-color: #1a1a1a;">
+<section class="position-relative py-8 py-sm-9" style="background-image:url(assets/media/bg-1.jpg); background-position: center left; background-size: cover;">
     <div class="container z-index-9 position-relative">
         <div class="row">
             <div class="col-xl-8 m-auto text-center py-xl-8">
-                <h1 class="display-4 text-white mb-3">Magrol Global UAE</h1>
+                <h1 class="display-4 text-white mb-3">UAE <br>Magrol Global</h1>
                 <h5 class="text-white mb-3">Your Premier Partner in Dubai for Cars, Real Estate, and Building Materials.</h5>
                 <a href="#services" class="btn btn-lg btn-warning mb-0">Our Services</a>
             </div>
