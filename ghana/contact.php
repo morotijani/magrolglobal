@@ -4,6 +4,19 @@
     $navClass = '<header class="navbar-light header-sticky"><nav class="navbar navbar-expand-xl">';
     include  __DIR__ . '/system/inc/head.php';
     include  __DIR__ . '/system/inc/topnav.php';
+
+    if ($_POST) {
+        $name = sanitize($_POST['name']);
+        $email = sanitize($_POST['email']);
+        $title = sanitize($_POST['title']);
+        $message = sanitize($_POST['message']);
+
+        $to = 'info@ghana.magrolglobal.com';
+        $subject = 'New Message from ' . $name;
+        $body = "Name: " . $name . "\nEmail: " . $email . "\nTitle: " . $title . "\nMessage: " . $message;
+
+        mail($to, $subject, $body, 'From: ' . $email);
+    }
 ?>
 
 <!-- =======================
@@ -142,35 +155,39 @@ Contact form and vector START -->
 
 					<!-- Card body START -->
 					<div class="card-body p-0">
-						<form class="row g-4">
+						<form class="row g-4" method="post">
 							<!-- Name -->
 							<div class="col-md-6">
 								<label class="form-label">Your name *</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" name="name" id="name">
 							</div>
 							<!-- Email -->
 							<div class="col-md-6">
 								<label class="form-label">Email address *</label>
-								<input type="email" class="form-control">
+								<input type="email" class="form-control" name="email" id="email">
 							</div>
 							<!-- Mobile number -->
 							<div class="col-12">
 								<label class="form-label">Mobile number *</label>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" name="mobile" id="mobile">
 							</div>
                             <div class="col-12">
                                 <label class="form-label">Service of Interest</label>
-                                <select class="form-select">
+                                <select class="form-select" name="service" id="service">
                                     <option>General Inquiry</option>
                                     <option>Car Import</option>
                                     <option>Real Estate</option>
                                     <option>Building Materials</option>
                                 </select>
                             </div>
+                            <div class="col-12">
+								<label class="form-label">Title *</label>
+								<input type="text" class="form-control" name="title" id="title">
+							</div>
 							<!-- Message -->
 							<div class="col-12">
 								<label class="form-label">Message *</label>
-								<textarea class="form-control" rows="3"></textarea>
+								<textarea class="form-control" rows="3" name="message" id="message"></textarea>
 							</div>
 							<!-- Checkbox -->
 							<div class="col-12 form-check ms-2">
@@ -181,7 +198,7 @@ Contact form and vector START -->
 							</div>
 							<!-- Button -->
 							<div class="col-12">
-								<button class="btn btn-dark mb-0" type="button">Send Message</button>
+								<button class="btn btn-dark mb-0" type="submit">Send Message</button>
 							</div>	
 						</form>
 					</div>

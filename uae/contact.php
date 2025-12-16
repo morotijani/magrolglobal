@@ -4,6 +4,19 @@
     $navClass = '<header class="navbar-light header-sticky"><nav class="navbar navbar-expand-xl">';
     include  __DIR__ . '/system/inc/head.php';
     include  __DIR__ . '/system/inc/topnav.php';
+
+    if ($_POST) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $title = $_POST['title'];
+        $message = $_POST['message'];
+
+        $to = 'info@uae.magrolglobal.com';
+        $subject = 'New Message from ' . $name;
+        $body = "Name: " . $name . "\nEmail: " . $email . "\nTitle: " . $title . "\nMessage: " . $message;
+
+        mail($to, $subject, $body, 'From: ' . $email);
+    }
 ?>
 
 
@@ -18,24 +31,28 @@ Main banner START -->
 				<h1>Get in touch with our Dubai Headquarters.</h1>
 
 				<!-- Contact form -->
-				<form class="mt-4">
+				<form class="mt-4" method="post">
 					<!-- Name -->
 					<div class="mb-4 form-control-bg-light">
 						<label class="form-label">Your name *</label>
-						<input type="text" class="form-control">
+						<input type="text" class="form-control" name="name" id="name">
 					</div>
 					<!-- Email -->
 					<div class="mb-4 form-control-bg-light">
 						<label class="form-label">Email address *</label>
-						<input type="email" class="form-control">
+						<input type="email" class="form-control" name="email" id="email">
+					</div>
+                    <div class="mb-4 form-control-bg-light">
+						<label class="form-label">Title *</label>
+						<input type="text" class="form-control" name="title" id="title">
 					</div>
 					<!-- Message -->
 					<div class="mb-4 form-control-bg-light">
 						<label class="form-label">Message *</label>
-						<textarea class="form-control" rows="4"></textarea>
+						<textarea class="form-control" rows="4" name="message" id="message"></textarea>
 					</div>
 					<!-- Button -->
-					<div><button class="btn btn-lg btn-primary mb-0" type="button">Send Message</button></div>	
+					<div><button class="btn btn-lg btn-primary mb-0" type="submit">Send Message</button></div>	
 				</form>
 			</div>
 
