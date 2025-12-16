@@ -46,7 +46,7 @@ Services START -->
                 <div class="card card-body shadow p-5 align-items-center text-center h-100">
                     <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-4"><i class="fa-solid fa-building"></i></div>
                     <h5>Real Estate Business</h5>
-                    <p>Find your dream property or investment opportunity in the heart of Dubai's thriving real estate market.</p>
+                    <p>Find your perfect property with our comprehensive real estate services, offering expert guidance and a wide selection of listings.</p>
                 </div>
             </div>
             <!-- Service 3: Building Material -->
