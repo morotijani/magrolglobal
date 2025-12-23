@@ -312,8 +312,8 @@ Map and office START -->
 			<div class="col-sm-6 col-lg-4">
 				<div class="card card-body shadow p-4 h-100">
 					<h5 class="mb-3">Dubai, UAE (HQ)</h5>
-					<address class="mb-1">Business Bay, Dubai</address>
-					<p class="mb-1">Call: +971 4 123 4567</p>
+					<address class="mb-1">Al Garhoud, B312 Plot 102</address>
+					<p class="mb-1">Call: +971-55-6319772</p>
 					<p>Support time: Monday to Saturday 
 						<br>
 						9:00 am to 5:30 pm
@@ -326,15 +326,13 @@ Map and office START -->
 			<div class="col-sm-6 col-lg-4">
 				<div class="card card-body shadow p-4 h-100">
 					<h5 class="mb-3">Ghana, Africa</h5>
-					<address class="mb-1">
-                        Business Bay, Dubai
-                        United Arab Emirates</address>
-					<p class="mb-1">Call: +971 4 123 4567</p>
+					<address class="mb-1">Konongo, Ashanti</address>
+					<p class="mb-1">Call: +233 54 111 3697</p>
 					<p>Support time: Monday to Saturday 
 						<br>
 						9:30 am to 6:00 pm
 					</p>
-					<div><a href="#" class="btn btn-link p-0">View location <i class="bi bi-arrow-right ms-1"></i></a></div>
+					<div><a href="https://ghana.magrolglobal.com" class="btn btn-link p-0">View location <i class="bi bi-arrow-right ms-1"></i></a></div>
 				</div>	
 			</div>
 		</div>

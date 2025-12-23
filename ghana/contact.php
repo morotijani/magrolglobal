@@ -44,8 +44,8 @@ Main banner START -->
 					<p>Imprudence attachment him his for sympathize. Large above be to means.</p>
 					<!-- Buttons -->
 					<div class="d-grid gap-3 d-sm-block">
-						<button class="btn btn-sm btn-primary-soft"><i class="bi bi-phone me-2"></i>+123 456 789</button>
-						<button class="btn btn-sm btn-light"><i class="bi bi-telephone me-2"></i>+(222)4567 586</button>
+						<button class="btn btn-sm btn-primary-soft"><i class="bi bi-phone me-2"></i>+971-55-6319772</button>
+						<button class="btn btn-sm btn-light"><i class="bi bi-telephone me-2"></i>+233 54 111 3697</button>
 					</div>
 				</div>
 			</div>
@@ -74,7 +74,7 @@ Main banner START -->
 					<h5>Ghana Office</h5>
                     <address>
                         Magrol Global Ghana<br>
-                        Accra, Ghana<br>
+                        Konongo, Ashanti<br>
                         West Africa
                     </address>
 				</div>
