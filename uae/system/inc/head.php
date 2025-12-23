@@ -6,8 +6,78 @@
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="Webestica.com">
-	<meta name="description" content="Booking - Multipurpose Online Booking Theme">
+	
+	<meta name="description" content="Your Gateway to Premium Services in Dubai." />
+    <link rel="canonical" href="https://uae.magrolglobal.com" />
+    
+    <!-- Primary author / publisher -->
+	<meta name="author" content="Magrol Global">
+    
+    <!-- Open Graph (Facebook, LinkedIn, other link previews) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Magrol Global UAE" />
+    <meta property="og:description" content="Your Gateway to Premium Services in Dubai." />
+    <meta property="og:url" content="https://uae.magrolglobal.com/" />
+    <meta property="og:site_name" content="Magrol Global" />
+    
+     <!-- Replace with your high-quality preview image (>=1200x630) -->
+    <meta property="og:image" content="https://uae.magrolglobal.com/assets/media/logo/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Magrol Global" />
+    <meta name="twitter:creator" content="@Magrol Global" />
+    <meta name="twitter:title" content="Magrol Global UAE" />
+    <meta name="twitter:description" content="Your Gateway to Premium Services in Dubai." />
+    <meta name="twitter:image" content="https://uae.magrolglobal.com/assets/media/logo/logo.png" />
+
+    <!-- Schema.org JSON-LD (helps some consumers understand the file) -->
+    <!-- Schema.org JSON-LD: Organization + WebSite + SoftwareApplication (crypto exchange) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://uae.magrolglobal.com#org",
+                    "name": "Magrol Global",
+                    "url": "https://uae.magrolglobal.com",
+                    "logo": "https://uae.magrolglobal.com/assets/media/logo/logo.png",
+                    "sameAs": [
+                        "https://twitter.com/Menterprise",
+                        "https://www.linkedin.com/company/menterprise-ghana-limited",
+                        "https://www.facebook.com/MenterpriseGhanaLimited"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "url": "https://uae.magrolglobal.com",
+                    "name": "Magrol Global",
+                    "publisher": {
+                        "@id": "https://uae.magrolglobal.com#org"
+                    }
+                }
+            ]
+        }
+    </script>
+    
+    <!-- Optional: small inline JSON used by client (not required for social preview) -->
+    <script id="menterprise-client-config" type="application/json">
+        {"site":"Magrol Global","url":"https://uae.magrolglobal.com","developer":"Magrol Global"}
+    </script>
+
+    <!-- Favicon icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= PROOT; ?>assets/media/logo/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= PROOT; ?>assets/media/logo/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= PROOT; ?>assets/media/logo/logo.png" />
+    <link rel="manifest" href="<?= PROOT; ?>assets/media/logo/site.webmanifest" />
+    <link rel="mask-icon" href="<?= PROOT; ?>assets/media/logo/block-safari-pinned-tab.svg" color="#8b3dff" />
+    <link rel="shortcut icon" href="<?= PROOT; ?>assets/media/logo/logo.png" />
+    <meta name="msapplication-TileColor" content="#8b3dff" />
+    <meta name="msapplication-config" content="<?= PROOT; ?>assets/media/logo/tile.xml" />
 
 	<!-- Dark mode -->
 	<script>
