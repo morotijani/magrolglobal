@@ -196,7 +196,7 @@
 	        $fn = $name;
 	        $to = $to;
 	        $from = MAIL_EMAIL;
-	        $from_name = 'Levina, Namibra.io 🤞';
+	        $from_name = 'Magroglobal, Ghana';
 	        $subject = $subject;
 	        $body = $body;
 
@@ -207,7 +207,7 @@
 	        $mail->SMTPAuth = true;
 
 	        $mail->SMTPSecure = 'ssl'; 
-	        $mail->Host = 'smtp.garypie.com';
+	        $mail->Host = MAIL_SMTP;
 	        $mail->Port = 465;  
 	        $mail->Username = $from;
 	        $mail->Password = MAIL_KEY; 
@@ -220,7 +220,7 @@
 	        $mail->AddReplyTo($from, $from_name);
 	        $mail->Subject = $subject;
 	        $mail->Body = $body;
-			$mail->setFrom(MAIL_EMAIL, 'M.Enterprise Contact Form');
+			$mail->setFrom(MAIL_EMAIL, 'Magroglobal, Ghana - Request Form');
 	        $mail->AddAddress($to);
 	        $mail->send();
 	        return true;

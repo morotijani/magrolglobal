@@ -11,11 +11,13 @@
         $title = sanitize($_POST['title']);
         $message = sanitize($_POST['message']);
 
-        $to = 'info@ghana.magrolglobal.com';
+        // $to = 'info@ghana.magrolglobal.com';
         $subject = 'New Message from ' . $name;
         $body = "Name: " . $name . "\nEmail: " . $email . "\nTitle: " . $title . "\nMessage: " . $message;
 
-        mail($to, $subject, $body, 'From: ' . $email);
+        // mail($to, $subject, $body, 'From: ' . $email);
+		send_mail_to_server($subject, $body);
+		echo '<script>alert("Message sent successfully !")</script>';
     }
 ?>
 

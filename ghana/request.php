@@ -7,15 +7,31 @@
 
     if ($_POST) {
         $name = sanitize($_POST['name']);
+        $email = sanitize($_POST['email']);
         $phone = sanitize($_POST['phone']);
         $service = sanitize($_POST['service']);
         $description = sanitize($_POST['description']);
 
-        $to = 'info@ghana.magrolglobal.com';
+        // $to = 'info@ghana.magrolglobal.com';
         $subject = 'New Import Request from ' . $name;
         $body = "Name: " . $name . "\nPhone: " . $phone . "\nService: " . $service . "\nDescription: " . $description;
 
-        mail($to, $subject, $body, 'From: ' . $name . '<' . $phone . '>');
+        // mail($to, $subject, $body, 'From: ' . $name . '<' . $phone . '>');
+        
+		send_mail_to_server($subject, $body);
+
+        $to_subject = 'New Import Request.';
+        $to_body = '
+            <p>
+                Magrol Global Ghana has receive your request form, we will be in touch with you within 24hrs.
+            <br />
+                Thank you.
+                Magrol Global.
+            </p>    
+        ';
+        send_email($name, $email, $to_subject, $to_body);
+
+		echo '<script>alert("Message sent successfully !")</script>';
     }
 ?>
 
@@ -42,15 +58,19 @@ Main Banner START -->
                 <form method="post">
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
+                        <input type="text" class="form-control" placeholder="Your Name" name="name" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Contact Number</label>
-                        <input type="text" class="form-control" placeholder="Phone Number" name="phone" id="phone">
+                        <input type="text" class="form-control" placeholder="Phone Number" name="phone" id="phone" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Service Type</label>
-                        <select class="form-select" name="service" id="service">
+                        <select class="form-select" name="service" id="service" required>
                             <option>Import Car</option>
                             <option>Real Estate Inquiry</option>
                             <option>Building Materials</option>
@@ -59,7 +79,7 @@ Main Banner START -->
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Description of Request</label>
-                        <textarea class="form-control" rows="4" placeholder="Describe the item or service you are looking for..." name="description" id="description"></textarea>
+                        <textarea class="form-control" rows="4" placeholder="Describe the item or service you are looking for..." name="description" id="description" required></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-dark btn-lg">Submit Request</button>

@@ -2,7 +2,6 @@ RewriteEngine on
 
 RewriteRule ^admin/products/([0-9a-zA-Z]+)$ admin/products.php?edit=$1 [NC,L]
 
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
